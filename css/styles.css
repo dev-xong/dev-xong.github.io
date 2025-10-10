@@ -10990,7 +10990,7 @@ header.masthead .profile-area {
   display: flex;
   align-items: center;
   align-items: stretch;
-  gap: 100px; /* 프로필과 소개란 사이 간격 */
+  /* gap: 100px;  프로필과 소개란 사이 간격 */
 }
 
 header.masthead .profile {
