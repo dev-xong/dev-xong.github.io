@@ -11378,3 +11378,77 @@ header.masthead .intro p {
     position: relative;
     display: block;
 }
+
+/* 레이아웃 기본 설정 */
+.project-container {
+    position: relative;
+    width: 100%;
+}
+/* Career Timeline Only */
+
+.career-wrap {
+  margin-top: 60px;
+}
+
+.career-timeline {
+  position: relative;
+  padding-left: 40px;
+}
+
+/* 세로선: 첫~마지막 아이템 기준 */
+.career-timeline .timeline-line {
+  position: absolute;
+  left: 10px;
+  top: 6px;        /* 첫 점 기준 */
+  bottom: 6px;     /* 마지막 점 기준 */
+  width: 2px;
+  background-color: #8b847b;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+/* 공통 점 */
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -34px;
+  width: 12px;
+  height: 12px;
+  background-color: #8b847b;
+  border-radius: 50%;
+}
+
+/* 첫 번째 */
+.timeline-item:first-child::before {
+  top: 0;
+}
+
+/* 가운데 */
+.timeline-item:not(:first-child):not(:last-child)::before {
+  top: 6px;
+}
+
+/* 마지막 */
+.timeline-item:last-child::before {
+  bottom: 0;
+}
+
+.timeline-item h4 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.timeline-item p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+.project-col-lg-6 {
+    flex: 0 0 auto;
+    width: 38%;
+}
