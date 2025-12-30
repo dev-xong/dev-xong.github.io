@@ -11392,22 +11392,18 @@ header.masthead .intro p {
 
 .career-timeline {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
   padding-left: 40px;
 }
 
-/* 세로선: 첫~마지막 아이템 기준 */
-.career-timeline .timeline-line {
-  position: absolute;
-  left: 10px;
-  top: 6px;        /* 첫 점 기준 */
-  bottom: 6px;     /* 마지막 점 기준 */
-  width: 2px;
-  background-color: #8b847b;
+.career-timeline::before {
+  display: none;
 }
 
 .timeline-item {
   position: relative;
-  margin-bottom: 40px;
 }
 
 /* 공통 점 */
@@ -11421,19 +11417,20 @@ header.masthead .intro p {
   border-radius: 50%;
 }
 
-/* 첫 번째 */
-.timeline-item:first-child::before {
-  top: 0;
+.timeline-item::after {
+  content: "";
+  position: absolute;
+  left: -29.5px;              /* 점 중앙 ( -34 + 6 ) */
+  top: 12px;                /* 점 중앙부터 시작 */
+  width: 2px;
+  height: calc(100% + 32px);/* 아이템 높이 + gap */
+  background-color: #8b847b;
+  z-index: 1;
 }
 
-/* 가운데 */
-.timeline-item:not(:first-child):not(:last-child)::before {
-  top: 6px;
-}
-
-/* 마지막 */
-.timeline-item:last-child::before {
-  bottom: 0;
+/* ===== 마지막 아이템은 선 제거 ===== */
+.timeline-item:last-child::after {
+  display: none;
 }
 
 .timeline-item h4 {
