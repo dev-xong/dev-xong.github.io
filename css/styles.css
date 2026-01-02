@@ -11113,9 +11113,7 @@ header.masthead .intro p {
 .portfolio-modal .modal-content ul.list-inline {
   margin-bottom: 2rem;
 }
-.portfolio-modal .modal-content img {
-  margin-bottom: 2rem;
-}
+
 .portfolio-modal .close-modal {
   position: absolute;
   top: 1.5rem;
@@ -11129,6 +11127,7 @@ header.masthead .intro p {
   opacity: 0.3;
 }
 
+/* TIMELINE */
 .timeline {
   position: relative;
   padding: 0;
@@ -11296,6 +11295,8 @@ header.masthead .intro p {
     padding: 0 100px 20px 20px;
   }
 }
+
+
 .team-member {
   margin-bottom: 3rem;
   text-align: center;
@@ -11321,6 +11322,8 @@ header.masthead .intro p {
   background-color: #e6e5df;
   color: #8b847b;
 }
+
+/* 바로가기 링크 이미지 */
 
 .project-link img {
     width: 500px;
@@ -11407,6 +11410,8 @@ header.masthead .intro p {
     color: #000;
     font-weight: bold;
 }
+
+/* -------------------------------------------- */
 
 /* Career Timeline Only */
 
