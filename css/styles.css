@@ -11327,6 +11327,14 @@ header.masthead .intro p {
     height: 220px;
 }
 
+.project-link p {
+    text-decoration: none;
+}
+
+.project-link, .project-link:hover {
+    text-decoration: none !important;
+}
+
 /* 프로젝트 이미지 테두리 및 기본 스타일 */
 .project-item .project-link img {
     border: 1px solid #dee2e6; /* 연한 회색 테두리 */
@@ -11384,6 +11392,22 @@ header.masthead .intro p {
     position: relative;
     width: 100%;
 }
+
+.site-name {
+    position: relative; /* z-index를 적용하기 위해 필요 */
+    z-index: 2;         /* 노란색 오버레이(보통 1 또는 설정 안됨)보다 높게 설정 */
+    text-align: center;
+    margin-top: 5px;
+    color: #333;        /* 평상시 글자 색상 */
+    transition: all 0.5s;
+}
+
+/* 마우스 오버 시 글자 색상을 바꾸고 싶다면 추가 (선택사항) */
+.project-link:hover .site-name {
+    color: #000;
+    font-weight: bold;
+}
+
 /* Career Timeline Only */
 
 .career-wrap {
@@ -11396,6 +11420,7 @@ header.masthead .intro p {
   flex-direction: column;
   gap: 32px;
   padding-left: 40px;
+  padding-bottom: 50px;
 }
 
 .career-timeline::before {
