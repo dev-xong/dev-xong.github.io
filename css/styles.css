@@ -10945,6 +10945,11 @@ p {
     padding-bottom: 1rem;
     background-color: #e6e5df;
   }
+}
+
+#mainNav.navbar-shrink {
+  background-color: #e6e5df;
+
   #mainNav.navbar-shrink .navbar-brand {
     font-size: 1.25em;
     margin-top: 10px;
@@ -10961,8 +10966,8 @@ p {
   }
 }
 header.masthead {
-  padding-top: 10.5rem;
-  padding-bottom: 6rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   text-align: center;
   color: #fff;
   background-color: #f8f9fa;
