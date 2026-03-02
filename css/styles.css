@@ -92,10 +92,10 @@
 }
 
 @font-face {
-    font-family: 'Ridibatang';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/RIDIBatang.woff') format('woff');
-    font-weight: normal;
-    font-display: swap;
+  font-family: 'Ridibatang';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/RIDIBatang.woff') format('woff');
+  font-weight: normal;
+  font-display: swap;
 }
 
 body {
@@ -178,10 +178,10 @@ p {
 
 abbr[title] {
   -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
+  text-decoration: underline dotted;
   cursor: help;
   -webkit-text-decoration-skip-ink: none;
-          text-decoration-skip-ink: none;
+  text-decoration-skip-ink: none;
 }
 
 address {
@@ -2016,8 +2016,8 @@ progress {
   background-clip: padding-box;
   border: 1px solid #ced4da;
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border-radius: 0.375rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
@@ -2058,7 +2058,7 @@ progress {
   padding: 0.375rem 0.75rem;
   margin: -0.375rem -0.75rem;
   -webkit-margin-end: 0.75rem;
-          margin-inline-end: 0.75rem;
+  margin-inline-end: 0.75rem;
   color: #212529;
   background-color: #e9ecef;
   pointer-events: none;
@@ -2107,7 +2107,7 @@ progress {
   padding: 0.25rem 0.5rem;
   margin: -0.25rem -0.5rem;
   -webkit-margin-end: 0.5rem;
-          margin-inline-end: 0.5rem;
+  margin-inline-end: 0.5rem;
 }
 
 .form-control-lg {
@@ -2120,7 +2120,7 @@ progress {
   padding: 0.5rem 1rem;
   margin: -0.5rem -1rem;
   -webkit-margin-end: 1rem;
-          margin-inline-end: 1rem;
+  margin-inline-end: 1rem;
 }
 
 textarea.form-control {
@@ -2173,8 +2173,8 @@ textarea.form-control-lg {
   border-radius: 0.375rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 @media (prefers-reduced-motion: reduce) {
   .form-select {
@@ -2247,10 +2247,10 @@ textarea.form-control-lg {
   background-size: contain;
   border: 1px solid rgba(0, 0, 0, 0.25);
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   -webkit-print-color-adjust: exact;
-          print-color-adjust: exact;
+  print-color-adjust: exact;
 }
 .form-check-input[type=checkbox] {
   border-radius: 0.25em;
@@ -2345,8 +2345,8 @@ textarea.form-control-lg {
   padding: 0;
   background-color: transparent;
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 .form-range:focus {
   outline: 0;
@@ -2370,7 +2370,7 @@ textarea.form-control-lg {
   -webkit-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   -webkit-appearance: none;
-          appearance: none;
+  appearance: none;
 }
 @media (prefers-reduced-motion: reduce) {
   .form-range::-webkit-slider-thumb {
@@ -2399,7 +2399,7 @@ textarea.form-control-lg {
   -moz-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   -moz-appearance: none;
-       appearance: none;
+  appearance: none;
 }
 @media (prefers-reduced-motion: reduce) {
   .form-range::-moz-range-thumb {
@@ -2741,8 +2741,8 @@ textarea.form-control-lg {
 }
 .was-validated .form-select:invalid:not([multiple]):not([size]), .was-validated .form-select:invalid:not([multiple])[size="1"], .form-select.is-invalid:not([multiple]):not([size]), .form-select.is-invalid:not([multiple])[size="1"] {
   padding-right: 4.125rem;
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e"), 
-                    url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%23dc3545'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23dc3545' stroke='none'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e"),
+  url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%23dc3545'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23dc3545' stroke='none'/%3e%3c/svg%3e");
   background-position: right 0.75rem center, center right 2.25rem;
   background-size: 16px 12px, calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
 }
@@ -2808,8 +2808,8 @@ textarea.form-control-lg {
   vertical-align: middle;
   cursor: pointer;
   -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  user-select: none;
   border: var(--bs-btn-border-width) solid var(--bs-btn-border-color);
   border-radius: var(--bs-btn-border-radius);
   background-color: var(--bs-btn-bg);
@@ -5170,8 +5170,8 @@ textarea.form-control-lg {
 .btn-close:disabled, .btn-close.disabled {
   pointer-events: none;
   -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  user-select: none;
   opacity: 0.25;
 }
 
@@ -5824,7 +5824,7 @@ textarea.form-control-lg {
   width: 100%;
   margin-right: -100%;
   -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
   transition: transform 0.6s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
@@ -6651,16 +6651,16 @@ textarea.form-control-lg {
 }
 .placeholder-wave {
   -webkit-mask-image: linear-gradient(130deg, #000 55%, rgba(0, 0, 0, 0.8) 75%, #000 95%);
-          mask-image: linear-gradient(130deg, #000 55%, rgba(0, 0, 0, 0.8) 75%, #000 95%);
+  mask-image: linear-gradient(130deg, #000 55%, rgba(0, 0, 0, 0.8) 75%, #000 95%);
   -webkit-mask-size: 200% 100%;
-          mask-size: 200% 100%;
+  mask-size: 200% 100%;
   animation: placeholder-wave 2s linear infinite;
 }
 
 @keyframes placeholder-wave {
   100% {
     -webkit-mask-position: -200% 0%;
-            mask-position: -200% 0%;
+    mask-position: -200% 0%;
   }
 }
 .clearfix::after {
@@ -8225,20 +8225,20 @@ textarea.form-control-lg {
 
 .user-select-all {
   -webkit-user-select: all !important;
-     -moz-user-select: all !important;
-          user-select: all !important;
+  -moz-user-select: all !important;
+  user-select: all !important;
 }
 
 .user-select-auto {
   -webkit-user-select: auto !important;
-     -moz-user-select: auto !important;
-          user-select: auto !important;
+  -moz-user-select: auto !important;
+  user-select: auto !important;
 }
 
 .user-select-none {
   -webkit-user-select: none !important;
-     -moz-user-select: none !important;
-          user-select: none !important;
+  -moz-user-select: none !important;
+  user-select: none !important;
 }
 
 .pe-none {
@@ -10965,6 +10965,7 @@ header.masthead {
   padding-bottom: 6rem;
   text-align: center;
   color: #fff;
+  background-color: #f8f9fa;
   background-image: url(" ");
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -11031,7 +11032,7 @@ header.masthead .intro p {
 }
 
 @media (min-width: 768px) {
- 
+
   header.masthead .masthead-subheading {
     font-size: 2.25rem;
     font-style: italic;
@@ -11042,7 +11043,6 @@ header.masthead .intro p {
     font-size: 4.5rem;
     font-weight: 700;
     line-height: 4.5rem;
-    margin-bottom: 4rem;
   }
 }
 #portfolio .portfolio-item {
@@ -11323,92 +11323,170 @@ header.masthead .intro p {
   color: #8b847b;
 }
 
+/* ===== Profile Info Grid ===== */
+.profile-info-grid {
+  display: grid;
+  background-color: #fff;
+  border-radius: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px 20px;
+  margin-top: 12px;
+  padding:14px 30px;
+  border: 1px solid rgb(139, 132, 123);
+
+}
+
+.profile-info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.profile-info-icon {
+  font-size: 1.2rem;
+  color: #333;
+  margin-top: 2px;
+  flex-shrink: 0;
+  width: 20px;
+  text-align: center;
+}
+
+.profile-info-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  min-width: 0;
+}
+
+.profile-info-label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #222;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+
+.profile-info-value {
+  font-size: 0.85rem;
+  color: #444;
+  line-height: 1.4;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.profile-info-value a {
+  text-decoration: none;
+  color: black;
+}
+
+.profile-info-value a:hover {
+  color: #8b847b;
+}
+
+@media (max-width: 768px) {
+  .profile-info-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px 12px;
+  }
+
+  .profile-info-value {
+    white-space: normal;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-info-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* 바로가기 링크 이미지 */
 
 .project-link img {
-    width: 500px;
-    height: 220px;
+  width: 500px;
+  height: 220px;
 }
 
 .project-link p {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .project-link, .project-link:hover {
-    text-decoration: none !important;
+  text-decoration: none !important;
 }
 
 /* 프로젝트 이미지 테두리 및 기본 스타일 */
 .project-item .project-link img {
-    border: 1px solid #dee2e6; /* 연한 회색 테두리 */
-    border-radius: 10px;       /* 모서리를 둥글게 (선택 사항) */
-    transition: all 0.3s ease-in-out; /* 부드러운 변화 효과 */
+  border: 1px solid #dee2e6; /* 연한 회색 테두리 */
+  border-radius: 10px;       /* 모서리를 둥글게 (선택 사항) */
+  transition: all 0.3s ease-in-out; /* 부드러운 변화 효과 */
 }
 
 /* 마우스를 올렸을 때(Hover) 효과 */
 .project-item .project-link:hover img {
-    border-color: #EAFAF0;     /* 테두리 색상을 포인트 컬러로 변경 */
-    transform: translateY(-5px); /* 이미지가 위로 5px 살짝 들림 */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* 그림자를 주어 입체감 추가 */
+  border-color: #EAFAF0;     /* 테두리 색상을 포인트 컬러로 변경 */
+  transform: translateY(-5px); /* 이미지가 위로 5px 살짝 들림 */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* 그림자를 주어 입체감 추가 */
 }
 
 /* 이미지와 캡션 사이 간격 조정 */
 .project-caption {
-    padding-top: 1.5rem;
+  padding-top: 1.5rem;
 }
 
 /* 마우스를 올리기 전에는 투명하게 */
 .project-item .project-link .project-hover {
-    display: flex;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: #EAFAF0; /* 포인트 컬러 #ffe47b의 RGBA 버전 */
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transition: opacity ease 0.5s;
-    top: 0;
-    left: 0;
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #EAFAF0; /* 포인트 컬러 #ffe47b의 RGBA 버전 */
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity ease 0.5s;
+  top: 0;
+  left: 0;
 }
 
 /* 마우스를 올렸을 때 보이게 처리 */
 .project-item .project-link:hover .project-hover {
-    opacity: 1;
-    border-radius: 15px;
+  opacity: 1;
+  border-radius: 15px;
 }
 
 /* 아이콘 색상 설정 */
 .project-item .project-link .project-hover .project-hover-content {
-    font-size: 20px;
-    color: white;
+  font-size: 20px;
+  color: white;
 }
 
 /* 이미지가 부모 컨테이너를 꽉 채우도록 설정 */
 .project-item {
-    position: relative;
-    display: block;
+  position: relative;
+  display: block;
 }
 
 /* 레이아웃 기본 설정 */
 .project-container {
-    position: relative;
-    width: 100%;
+  position: relative;
+  width: 100%;
 }
 
 .site-name {
-    position: relative; /* z-index를 적용하기 위해 필요 */
-    z-index: 2;         /* 노란색 오버레이(보통 1 또는 설정 안됨)보다 높게 설정 */
-    text-align: center;
-    margin-top: 5px;
-    color: #333;        /* 평상시 글자 색상 */
-    transition: all 0.5s;
+  position: relative; /* z-index를 적용하기 위해 필요 */
+  z-index: 2;         /* 노란색 오버레이(보통 1 또는 설정 안됨)보다 높게 설정 */
+  text-align: center;
+  margin-top: 5px;
+  color: #333;        /* 평상시 글자 색상 */
+  transition: all 0.5s;
 }
 
 /* 마우스 오버 시 글자 색상을 바꾸고 싶다면 추가 (선택사항) */
 .project-link:hover .site-name {
-    color: #000;
-    font-weight: bold;
+  color: #000;
+  font-weight: bold;
 }
 
 /* -------------------------------------------- */
@@ -11476,6 +11554,29 @@ header.masthead .intro p {
 }
 
 .project-col-lg-6 {
-    flex: 0 0 auto;
-    width: 38%;
+  flex: 0 0 auto;
+  width: 38%;
+}
+
+/* === Header Fix === */
+header.masthead .profile-area {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 3rem !important;
+}
+header.masthead .intro {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: flex-start !important;
+  max-width: 500px !important;
+  text-align: left !important;
+  margin-top: 0 !important;
+}
+header.masthead .intro .masthead-subheading,
+header.masthead .intro .masthead-heading,
+header.masthead .intro .masthead-intro {
+  color: #000 !important;
 }
