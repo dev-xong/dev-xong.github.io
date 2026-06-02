@@ -1,0 +1,168 @@
+/* ============================================================================
+   dev-xong Design System — Foundations: Color & Type
+   Aesthetic: soft, trendy Korean product UI (Toss / Inflearn lineage)
+   Typeface: Pretendard (KR/EN sans) + JetBrains Mono (code)
+   ----------------------------------------------------------------------------
+   NOTE ON FONTS: the source portfolio shipped Montserrat + Roboto Slab (the
+   generic StartBootstrap "Agency" theme). We deliberately swap to Pretendard
+   to match the requested Toss/Inflearn feel. Pretendard is loaded from its
+   official jsDelivr CDN; JetBrains Mono from Google Fonts. If you want these
+   self-hosted, drop the woff2 files in /fonts and replace the @imports.
+   ========================================================================== */
+
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.css');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap');
+
+:root {
+  /* ---- Brand: green primary + yellow accent ---------------------------- */
+  --brand-green:        #14B86C;  /* fresh emerald-green primary */
+  --brand-green-hover:  #0FA75E;
+  --brand-green-press:  #0C9152;
+  --brand-green-weak:   #E4F8EE;  /* tinted fill / selected bg */
+  --brand-green-weaker: #F1FBF6;
+  --brand-yellow:       #FFC83D;  /* golden-yellow accent (fills / highlights) */
+  --brand-yellow-deep:  #8A6300;  /* readable yellow text on light surfaces */
+  --brand-yellow-weak:  #FFF6DD;
+
+  /* Compatibility aliases — components key off these names.
+     PRIMARY slot (was blue) -> green ;  ACCENT slot (was mint) -> yellow. */
+  --brand-blue:        var(--brand-green);
+  --brand-blue-hover:  var(--brand-green-hover);
+  --brand-blue-press:  var(--brand-green-press);
+  --brand-blue-weak:   var(--brand-green-weak);
+  --brand-blue-weaker: var(--brand-green-weaker);
+  --brand-mint:        var(--brand-yellow);
+  --brand-mint-hover:  var(--brand-yellow-deep);  /* used as text -> deep/readable */
+  --brand-mint-weak:   var(--brand-yellow-weak);
+
+  /* ---- Neutral scale (brighter, clean cool grey) ----------------------- */
+  --grey-900: #20262E;
+  --grey-800: #353D47;
+  --grey-700: #515A66;
+  --grey-600: #6E7884;
+  --grey-500: #909AA6;
+  --grey-400: #B6BEC8;
+  --grey-300: #D8DDE3;
+  --grey-200: #E9ECF0;
+  --grey-100: #F4F6F8;
+  --grey-50:  #FAFBFC;
+  --white:    #FFFFFF;
+
+  /* ---- Semantic ------------------------------------------------------- */
+  --success:      #15C47E;
+  --success-weak: #E5F8F0;
+  --warning:      #FF9500;
+  --warning-weak: #FFF3E0;
+  --danger:       #F04452;  /* Toss red */
+  --danger-weak:  #FDECEE;
+  --info:         #3182F6;
+  --info-weak:    #E8F3FF;
+
+  /* ---- Semantic foreground (text) ------------------------------------- */
+  --fg-strong:  var(--grey-900);  /* headings */
+  --fg-1:       var(--grey-800);  /* primary body */
+  --fg-2:       var(--grey-700);  /* secondary body */
+  --fg-3:       var(--grey-500);  /* muted / captions */
+  --fg-4:       var(--grey-400);  /* disabled / hints */
+  --fg-on-brand:#FFFFFF;
+  --fg-link:    var(--brand-blue);
+
+  /* ---- Semantic background / surface ---------------------------------- */
+  --bg-page:    #FCFDFE;          /* app canvas */
+  --bg-surface: var(--white);     /* cards, sheets */
+  --bg-sunken:  var(--grey-50);   /* inputs, wells */
+  --bg-muted:   var(--grey-100);  /* chips, hover rows */
+  --bg-inverse: var(--grey-900);
+
+  /* ---- Borders -------------------------------------------------------- */
+  --border-strong: var(--grey-300);
+  --border:        var(--grey-200);
+  --border-subtle: var(--grey-100);
+  --border-focus:  var(--brand-blue);
+
+  /* ---- Typography: families ------------------------------------------- */
+  --font-sans: 'Pretendard Variable', 'Pretendard', -apple-system,
+               BlinkMacSystemFont, 'Apple SD Gothic Neo', system-ui,
+               'Malgun Gothic', sans-serif;
+  --font-mono: 'JetBrains Mono', 'D2Coding', ui-monospace, 'SFMono-Regular',
+               Menlo, Consolas, monospace;
+
+  /* ---- Typography: weights -------------------------------------------- */
+  --w-regular: 400;
+  --w-medium:  500;
+  --w-semibold:600;
+  --w-bold:    700;
+  --w-extra:   800;
+
+  /* ---- Type scale (px) — tuned for Korean + Latin ---------------------- */
+  --fs-display: 48px;  --lh-display: 1.18;  --ls-display: -0.03em;
+  --fs-h1:      36px;  --lh-h1:      1.25;  --ls-h1:      -0.025em;
+  --fs-h2:      28px;  --lh-h2:      1.30;  --ls-h2:      -0.02em;
+  --fs-h3:      22px;  --lh-h3:      1.36;  --ls-h3:      -0.015em;
+  --fs-h4:      18px;  --lh-h4:      1.44;  --ls-h4:      -0.01em;
+  --fs-body-lg: 17px;  --lh-body-lg: 1.6;   --ls-body-lg: -0.01em;
+  --fs-body:    16px;  --lh-body:    1.62;  --ls-body:    -0.005em;
+  --fs-sm:      14px;  --lh-sm:      1.55;  --ls-sm:      0;
+  --fs-caption: 13px;  --lh-caption: 1.5;   --ls-caption: 0;
+  --fs-mono:    14px;  --lh-mono:    1.6;   --ls-mono:    0;
+
+  /* ---- Radii ---------------------------------------------------------- */
+  --radius-xs:  6px;
+  --radius-sm:  8px;
+  --radius-md:  12px;
+  --radius-lg:  16px;
+  --radius-xl:  20px;
+  --radius-2xl: 28px;
+  --radius-pill:999px;
+
+  /* ---- Spacing (4px base) --------------------------------------------- */
+  --space-1: 4px;   --space-2: 8px;   --space-3: 12px;  --space-4: 16px;
+  --space-5: 20px;  --space-6: 24px;  --space-8: 32px;  --space-10: 40px;
+  --space-12: 48px; --space-16: 64px; --space-20: 80px; --space-24: 96px;
+
+  /* ---- Elevation (soft, low-contrast Toss shadows) -------------------- */
+  --shadow-xs: 0 1px 2px rgba(99, 110, 130, 0.05);
+  --shadow-sm: 0 2px 6px rgba(99, 110, 130, 0.06);
+  --shadow-md: 0 6px 20px rgba(99, 110, 130, 0.07);
+  --shadow-lg: 0 12px 32px rgba(99, 110, 130, 0.09);
+  --shadow-xl: 0 20px 52px rgba(99, 110, 130, 0.12);
+  --shadow-brand: 0 8px 20px rgba(20, 184, 108, 0.26);
+
+  /* ---- Motion --------------------------------------------------------- */
+  --ease-out:   cubic-bezier(0.22, 1, 0.36, 1);   /* settle */
+  --ease-soft:  cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-spring:cubic-bezier(0.34, 1.56, 0.64, 1);/* gentle overshoot */
+  --dur-fast:   120ms;
+  --dur-base:   200ms;
+  --dur-slow:   320ms;
+}
+
+/* ============================================================================
+   Semantic element defaults — opt in with class `ds-type` on a container,
+   or use these as a reference for component styles.
+   ========================================================================== */
+.ds-type { font-family: var(--font-sans); color: var(--fg-1);
+  -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+
+.ds-display { font: var(--w-extra) var(--fs-display)/var(--lh-display) var(--font-sans);
+  letter-spacing: var(--ls-display); color: var(--fg-strong); }
+.ds-h1 { font: var(--w-bold) var(--fs-h1)/var(--lh-h1) var(--font-sans);
+  letter-spacing: var(--ls-h1); color: var(--fg-strong); }
+.ds-h2 { font: var(--w-bold) var(--fs-h2)/var(--lh-h2) var(--font-sans);
+  letter-spacing: var(--ls-h2); color: var(--fg-strong); }
+.ds-h3 { font: var(--w-bold) var(--fs-h3)/var(--lh-h3) var(--font-sans);
+  letter-spacing: var(--ls-h3); color: var(--fg-strong); }
+.ds-h4 { font: var(--w-semibold) var(--fs-h4)/var(--lh-h4) var(--font-sans);
+  letter-spacing: var(--ls-h4); color: var(--fg-strong); }
+.ds-body-lg { font: var(--w-regular) var(--fs-body-lg)/var(--lh-body-lg) var(--font-sans);
+  letter-spacing: var(--ls-body-lg); color: var(--fg-1); }
+.ds-body { font: var(--w-regular) var(--fs-body)/var(--lh-body) var(--font-sans);
+  letter-spacing: var(--ls-body); color: var(--fg-1); }
+.ds-sm { font: var(--w-regular) var(--fs-sm)/var(--lh-sm) var(--font-sans);
+  color: var(--fg-2); }
+.ds-caption { font: var(--w-medium) var(--fs-caption)/var(--lh-caption) var(--font-sans);
+  color: var(--fg-3); }
+.ds-mono { font: var(--w-regular) var(--fs-mono)/var(--lh-mono) var(--font-mono);
+  color: var(--fg-1); }
+.ds-eyebrow { font: var(--w-bold) var(--fs-caption)/1.4 var(--font-sans);
+  letter-spacing: 0.04em; text-transform: uppercase; color: var(--brand-blue); }
