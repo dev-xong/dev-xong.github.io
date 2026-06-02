@@ -29,7 +29,7 @@ function Hero({ onNav }) {
               display: 'flex', alignItems: 'center', justifyContent: 'center',
               boxShadow: 'var(--shadow-lg)', overflow: 'hidden',
             }}>
-              <img src="assets/img/profile/me.png" alt="dev-xong" style={{ width: 160, height: 160, objectFit: 'contain' }} />
+              <img src="../../assets/img/profile/me.png" alt="dev-xong" style={{ width: 160, height: 160, objectFit: 'contain' }} />
             </div>
             <span style={{
               position: 'absolute', right: 12, bottom: 16, display: 'inline-flex', alignItems: 'center',
@@ -43,9 +43,10 @@ function Hero({ onNav }) {
             <div className="section-eyebrow">Backend Developer</div>
             <h1 style={{ fontSize: 52, fontWeight: 800, letterSpacing: '-0.035em',
               color: 'var(--fg-strong)', margin: '6px 0 14px', lineHeight: 1.1 }}>dev-xong</h1>
-            <p style={{ fontSize: 17, lineHeight: 1.65, color: 'var(--fg-2)', margin: 0, maxWidth: 460 }}>
+            <p style={{ fontSize: 17, lineHeight: 1.65, color: 'var(--fg-2)', margin: 0, maxWidth: 720 }}>
               24년 3월부터 웹 개발자로 일하고 있습니다.<br />
-              공공기관 시스템 유지보수 사업에 참여해왔습니다.
+              시스템 유지보수 사업에 참여하면서 기술부채를 고민하며 개발해왔습니다.<br />
+              리팩토링, 성능향상, 백엔드 아키텍처 설계에 관심을 두고 지속적으로 공부중입니다.
             </p>
             <div style={{ display: 'inline-flex', alignItems: 'center', gap: 9, marginTop: 18,
               background: 'var(--brand-green-weak)', borderRadius: 'var(--radius-pill)',
