@@ -1,7 +1,7 @@
 // Career.jsx — Project / career timeline + linked live sites
 const SITES = [
-  { name: '우리동네재생정보', img: '../../assets/img/about/analysis.png', href: 'https://www.city.go.kr/map/index.do' },
-  { name: '도시재생종합정보체계', img: '../../assets/img/about/portal.png', href: 'https://www.city.go.kr/index.do' },
+  { name: '우리동네재생정보', img: 'assets/img/about/analysis.png', href: 'https://www.city.go.kr/map/index.do' },
+  { name: '도시재생종합정보체계', img: 'assets/img/about/portal.png', href: 'https://www.city.go.kr/index.do' },
 ];
 const TIMELINE = [
   { title: '도시재생종합정보체계 시스템 유지관리 사업 1차', period: '2024.03 — 2024.08', done: true },

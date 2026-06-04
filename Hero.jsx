@@ -29,7 +29,7 @@ function Hero({ onNav }) {
               display: 'flex', alignItems: 'center', justifyContent: 'center',
               boxShadow: 'var(--shadow-lg)', overflow: 'hidden',
             }}>
-              <img src="../../assets/img/profile/me.png" alt="dev-xong" style={{ width: 160, height: 160, objectFit: 'contain' }} />
+              <img src="assets/img/profile/me.png" alt="dev-xong" style={{ width: 160, height: 160, objectFit: 'contain' }} />
             </div>
             <span style={{
               position: 'absolute', right: 12, bottom: 16, display: 'inline-flex', alignItems: 'center',

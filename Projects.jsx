@@ -21,33 +21,22 @@ const PROJECTS = [
     role: '공간 데이터 처리 · 웹 지도 개발 · 통계 시각화',
     result: '3종 주제도 서비스 — 쇠퇴지역 / 정책통계 / 준공사업 지도',
     maps: [
-      ['쇠퇴지역지도', '../../assets/img/portfolio/gis/decline-map.png'],
-      ['정책통계지도', '../../assets/img/portfolio/gis/policy-map.png'],
-      ['준공사업지도', '../../assets/img/portfolio/gis/completion-map.png'],
-      ['마을관리사회적협동조합', '../../assets/img/portfolio/gis/coop-status.png', 'https://www.city.go.kr/portal/business/vilmgrcoop/center/list.do'],
+      ['쇠퇴지역지도', 'assets/img/portfolio/gis/decline-map.png'],
+      ['정책통계지도', 'assets/img/portfolio/gis/policy-map.png'],
+      ['준공사업지도', 'assets/img/portfolio/gis/completion-map.png'],
+      ['마을관리사회적협동조합', 'assets/img/portfolio/gis/coop-status.png', 'https://www.city.go.kr/portal/business/vilmgrcoop/center/list.do'],
     ],
   },
   {
-    id: 'web-a11y',
-    eyebrow: 'Web Accessibility',
-    title: '웹 접근성 개선 (KWCAG 2.1)',
-    cover: '../../assets/img/ach/wa-web-accessibility.png',
-    coverContain: true,
-    stack: ['JSP', 'JavaScript', 'KWCAG 2.1'],
-    problem: '2024–2025년 웹 접근성 진단 대응',
-    solution: 'KWCAG 2.1(한국형 웹 콘텐츠 접근성 지침)에 따라 다음 항목을 직접 점검하고 개선',
-    items: [
-      '적절한 대체 텍스트 제공',
-      '텍스트 및 이미지 콘텐츠 명도 대비 수정',
-      '초점과 이동 표시',
-      '적절한 링크 텍스트 제공',
-      '제목 제공',
-      '콘텐츠의 선형 구조',
-      '색에 무관한 콘텐츠 인식',
-      '활성/비활성 상태를 색뿐만 아니라 무늬 패턴 또는 주변 정보로 제공',
-    ],
-    role: '웹 접근성 점검 · 마크업/스타일 개선 · 지침 적용',
-    result: 'KWCAG 2.1 주요 항목 준수 — 누구나 동등하게 이용 가능한 화면 구현',
+    id: 'required-param',
+    eyebrow: 'Troubleshooting',
+    title: '필수 파라미터 누락 대응 (feat. 로그 개선)',
+    stack: ['Spring Legacy', 'Java', 'HandlerInterceptor'],
+    problem: '게시물 상세보기 등 일부 요청에서 필수 파라미터가 누락되면 too many results 예외가 발생하는 문제.',
+    code: 'java.sql.SQLException:\nError: excuteQueryForObject returned too many results.',
+    solution: '시스템 전역에서 필수 파라미터 누락에 대응하도록\n@RequiredParam 커스텀 어노테이션과 HandlerInterceptor를 활용해 문제를 해결.\n필수 파라미터 없이 컨트롤러를 호출하면 Exception을 던지는 대신,\n요청 URL과 누락된 필수 파라미터 정보를 로그로 남기도록 개선.',
+    link: 'https://velog.io/@dev-xong/Spring-Legacy-%ED%95%84%EC%88%98%ED%8C%8C%EB%9D%BC%EB%AF%B8%ED%84%B0-%EB%88%84%EB%9D%BD-%EB%8C%80%EC%9D%91-feat-%EC%86%8D%EC%83%81%ED%95%A8-%ED%92%80%EC%9D%B4',
+    linkLabel: 'Velog에서 자세히 보기',
     maps: [],
   },
   {
@@ -79,15 +68,26 @@ const PROJECTS = [
     maps: [],
   },
   {
-    id: 'required-param',
-    eyebrow: 'Troubleshooting',
-    title: '필수 파라미터 누락 대응 (feat. 로그 개선)',
-    stack: ['Spring Legacy', 'Java', 'HandlerInterceptor'],
-    problem: '게시물 상세보기 등 일부 요청에서 필수 파라미터가 누락되면 too many results 예외가 발생하는 문제.',
-    code: 'java.sql.SQLException:\nError: excuteQueryForObject returned too many results.',
-    solution: '시스템 전역에서 필수 파라미터 누락에 대응하도록\n@RequiredParam 커스텀 어노테이션과 HandlerInterceptor를 활용해 문제를 해결.\n필수 파라미터 없이 컨트롤러를 호출하면 Exception을 던지는 대신,\n요청 URL과 누락된 필수 파라미터 정보를 로그로 남기도록 개선.',
-    link: 'https://velog.io/@dev-xong/Spring-Legacy-%ED%95%84%EC%88%98%ED%8C%8C%EB%9D%BC%EB%AF%B8%ED%84%B0-%EB%88%84%EB%9D%BD-%EB%8C%80%EC%9D%91-feat-%EC%86%8D%EC%83%81%ED%95%A8-%ED%92%80%EC%9D%B4',
-    linkLabel: 'Velog에서 자세히 보기',
+    id: 'web-a11y',
+    eyebrow: 'Web Accessibility',
+    title: '웹 접근성 개선 (KWCAG 2.1)',
+    cover: 'assets/img/ach/wa-web-accessibility.png',
+    coverContain: true,
+    stack: ['JSP', 'JavaScript', 'KWCAG 2.1'],
+    problem: '2024–2025년 웹 접근성 진단 대응',
+    solution: 'KWCAG 2.1(한국형 웹 콘텐츠 접근성 지침)에 따라 다음 항목을 직접 점검하고 개선',
+    items: [
+      '적절한 대체 텍스트 제공',
+      '텍스트 및 이미지 콘텐츠 명도 대비 수정',
+      '초점과 이동 표시',
+      '적절한 링크 텍스트 제공',
+      '제목 제공',
+      '콘텐츠의 선형 구조',
+      '색에 무관한 콘텐츠 인식',
+      '활성/비활성 상태를 색뿐만 아니라 무늬 패턴 또는 주변 정보로 제공',
+    ],
+    role: '웹 접근성 점검 · 마크업/스타일 개선 · 지침 적용',
+    result: 'KWCAG 2.1 주요 항목 준수 — 누구나 동등하게 이용 가능한 화면 구현',
     maps: [],
   },
   {
@@ -104,8 +104,8 @@ const PROJECTS = [
       '스프링 백엔드에서 공간데이터 조회 API 구현',
     ],
     maps: [
-      ['기초생활인프라', '../../assets/img/portfolio/gis/park-distribution.png'],
-      ['도시재생 선정사업지', '../../assets/img/portfolio/gis/seoul-regen.png'],
+      ['기초생활인프라', 'assets/img/portfolio/gis/park-distribution.png'],
+      ['도시재생 선정사업지', 'assets/img/portfolio/gis/seoul-regen.png'],
     ],
     mapsLabel: '🛰️ 공간데이터 활용 화면 - 우리동네재생정보',
   },
@@ -231,6 +231,22 @@ function ProjectModal({ p, onClose }) {
             </React.Fragment>
           )}
 
+          {p.diagram && (
+            <React.Fragment>
+              {p.diagramLabel && (
+                <div style={{ fontSize: 14, fontWeight: 700, color: 'var(--brand-green)',
+                  marginTop: 24, marginBottom: 12 }}>{p.diagramLabel}</div>
+              )}
+              <a href={p.diagram} target="_blank" rel="noreferrer" className="card"
+                style={{ display: 'block', overflow: 'hidden', padding: '20px',
+                  background: 'var(--bg-surface)', boxShadow: 'var(--shadow-sm)',
+                  marginTop: p.diagramLabel ? 0 : 24 }}>
+                <img src={p.diagram} alt={p.diagramLabel || '다이어그램'}
+                  style={{ display: 'block', width: '100%', height: 'auto' }} />
+              </a>
+            </React.Fragment>
+          )}
+
           {p.maps.length > 0 && (
             <React.Fragment>
               {p.mapsLabel && (
@@ -281,22 +297,128 @@ function ProjectModal({ p, onClose }) {
   );
 }
 
+// 업무 외 자기주도 프로젝트 — 내용 추가 시 아래 배열에 항목을 넣으면 됩니다.
+const SELF_PROJECTS = [
+  {
+    id: 'timeout-defense',
+    eyebrow: 'External Integration',
+    title: '외부 연동 장애 전파 차단 — Timeout 방어선 구축',
+    summary: '외부 API 지연·장애가 자사 서비스로 전파되는 것을 막기 위해\nConnection / Read Timeout을 적용하고, 장애 상황을 직접 재현해 검증',
+    stack: ['Spring', 'RestTemplate', 'HttpClient'],
+    problem: '외부 연동 호출에 타임아웃이 없으면, 연동 서비스 장애 시 응답을 무한정 대기하며 스레드 풀이 고갈\n→ 장애가 자사 서비스 전체로 전파.',
+    solution: '호출 경로에 두 단계 타임아웃을 적용해 장애 전파를 차단\n· Connection Timeout : 연결(Handshake) 대기 한도\n· Read Timeout : 연결 후 응답 대기 한도\n※ 결제 등 민감 기능은 Read Timeout을 다소 길게 두어 간헐 지연으로 인한 실패를 방지',
+    itemsLabel: '✔️ 장애 상황 재현 검증',
+    items: [
+      '정상 응답: status "success", 즉시 수신 확인',
+      '10초 지연 강제 인입 → Read Timeout 유발',
+      '5,000ms 초과 시 ResourceAccessException으로 빠져나와 에러 응답 반환',
+      '스레드가 외부 응답을 무한 점유하는 상황 차단 확인',
+    ],
+    diagram: 'assets/img/portfolio/timeout-sequence.png',
+    diagramLabel: '🔁 장애 재현 시퀀스',
+    role: 'Timeout 설계 · 장애 재현 테스트 · 검증',
+    result: '외부 장애가 자사 서비스로 전파되는 경로를 타임아웃 방어선으로 차단,\n연동 실패 시에도 자사 서비스는 정상 동작 유지.',
+    maps: [],
+  },
+  {
+    id: 'circuit-breaker',
+    eyebrow: 'Fault Isolation',
+    title: 'Circuit Breaker로 장애 격리 — 상태 전이 직접 검증',
+    summary: '외부 연동(VWorld) 장애 시 요청을 즉시 차단하고 정상화 시 자동 재개하도록\n서킷 브레이커를 적용하고, 장애를 시뮬레이션해 상태 전이를 직접 확인',
+    stack: ['Spring', 'Resilience4j', 'VWorld API'],
+    problem: '외부 연동(VWorld) 장애가 지속되면, 실패할 게 뻔한 요청을 계속 보내며 자사 자원을 소모하고 장애가 전파됨.\n연동 서비스도 회복할 틈을 얻지 못함.',
+    solution: '서킷 브레이커를 적용해 장애 시 요청을 즉시 차단하고, 정상화되면 자동 재개. 3단 상태로 동작.\n· CLOSED : 정상 전달. 오류율이 임계치(예: 50%) 초과 시 OPEN으로 전환\n· OPEN : 외부 호출 없이 즉시 에러 반환. 냉각 시간 후 HALF-OPEN으로\n· HALF-OPEN : 일부 요청만 시험 호출 → 성공 시 CLOSED 복귀, 실패 시 OPEN 재차단',
+    itemsLabel: '✔️ 상태 전이 직접 검증',
+    items: [
+      'CLOSED: 정상 호출 시 격리 없이 OK 응답 확인',
+      'CLOSED → OPEN: 연속 실패로 실패율 임계치 도달 시 자동 전이 확인',
+      'OPEN 차단력: 즉시 CIRCUIT_OPEN 반환, 외부 네트워킹 코드 미실행·지연 0ms 수렴 확인',
+      'OPEN → HALF-OPEN → CLOSED: 장애 해제 후 시험 호출 성공으로 자동 회복 확인',
+    ],
+    diagram: 'assets/img/portfolio/circuitbreaker-sequence.png',
+    diagramLabel: '🔁 서킷 브레이커 상태 전이 시퀀스',
+    role: '서킷 브레이커 설계 · 장애 시뮬레이션 · 상태 전이 검증',
+    result: '외부 장애가 지속돼도 실패 요청이 자사 자원을 소모하지 않도록 격리,\n정상화 시 사람 개입 없이 자동 복구되는 흐름을 검증으로 확보.',
+    maps: [],
+  },
+];
+
+function ProjectGrid({ projects, onOpen, sectionId, tint, eyebrow, title, sub }) {
+  const [page, setPage] = React.useState(0);
+  const PER_PAGE = 4;
+  const pageCount = Math.ceil(projects.length / PER_PAGE);
+  const go = (next) => setPage((p) => (next + pageCount) % pageCount);
+  const visible = projects.slice(page * PER_PAGE, page * PER_PAGE + PER_PAGE);
+  return (
+    <section className={'section' + (tint ? ' section--tint' : '')} id={sectionId}>
+      <div className="container">
+        <div className="section-head">
+          <div className="section-eyebrow">{eyebrow}</div>
+          <h2 className="section-title">{title}</h2>
+          <p className="section-sub">{sub}</p>
+        </div>
+
+        {projects.length === 0 ? (
+          <div style={{ textAlign: 'center', padding: '40px 24px', background: 'var(--bg-surface)',
+            border: '1px dashed var(--border-strong)', borderRadius: 'var(--radius-xl)' }}>
+            <div style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
+              width: 52, height: 52, borderRadius: '50%', background: 'var(--brand-green-weak)',
+              color: 'var(--brand-green)', marginBottom: 14 }}>
+              <Icon name="sparkle" size={24} />
+            </div>
+            <p style={{ fontSize: 16, fontWeight: 600, color: 'var(--fg-2)', margin: 0 }}>
+              곧 업데이트됩니다</p>
+            <p style={{ fontSize: 14, color: 'var(--fg-3)', margin: '6px 0 0' }}>
+              스스로 공부하고 테스트로 검증한 프로젝트를 준비 중입니다.</p>
+          </div>
+        ) : (
+          <React.Fragment>
+            <div style={{ position: 'relative' }}>
+              {pageCount > 1 && (
+                <button onClick={() => go(page - 1)} aria-label="이전" className="proj-arrow proj-arrow--prev">
+                  <Icon name="arrowRight" size={20} stroke={2.4} style={{ transform: 'rotate(180deg)' }} />
+                </button>
+              )}
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2,1fr)', gap: 20 }} className="projects-grid">
+                {visible.map((p) => <ProjectCard key={p.id} p={p} onOpen={onOpen} />)}
+              </div>
+              {pageCount > 1 && (
+                <button onClick={() => go(page + 1)} aria-label="다음" className="proj-arrow proj-arrow--next">
+                  <Icon name="arrowRight" size={20} stroke={2.4} />
+                </button>
+              )}
+            </div>
+
+            {pageCount > 1 && (
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 9, marginTop: 32 }}>
+                {Array.from({ length: pageCount }).map((_, i) => (
+                  <button key={i} onClick={() => setPage(i)} aria-label={`${i + 1}페이지`}
+                    style={{ border: 'none', cursor: 'pointer', padding: 0, borderRadius: 'var(--radius-pill)',
+                      height: 9, width: i === page ? 26 : 9,
+                      background: i === page ? 'var(--brand-green)' : 'var(--grey-300)',
+                      transition: 'all var(--dur-base) var(--ease-out)' }} />
+                ))}
+              </div>
+            )}
+          </React.Fragment>
+        )}
+      </div>
+    </section>
+  );
+}
+
 function Projects() {
   const [active, setActive] = React.useState(null);
   return (
-    <section className="section section--tint" id="projects">
-      <div className="container">
-        <div className="section-head">
-          <div className="section-eyebrow">Project Experience</div>
-          <h2 className="section-title">프로젝트 주요 경험</h2>
-          <p className="section-sub">문제를 정의하고, 직접 설계하고, 결과로 증명한 작업들</p>
-        </div>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2,1fr)', gap: 20 }} className="projects-grid">
-          {PROJECTS.map((p) => <ProjectCard key={p.id} p={p} onOpen={setActive} />)}
-        </div>
-      </div>
+    <React.Fragment>
+      <ProjectGrid projects={PROJECTS} onOpen={setActive} sectionId="projects" tint
+        eyebrow="Project Experience" title="프로젝트 경험"
+        sub="문제를 정의하고, 직접 설계하고, 결과로 증명한 작업들" />
+      <ProjectGrid projects={SELF_PROJECTS} onOpen={setActive} sectionId="self-projects"
+        eyebrow="Self-Directed Projects" title="업무 밖에서 노력한 백엔드 역량"
+        sub="스스로 공부하고 테스트로 검증했습니다" />
       {active && <ProjectModal p={active} onClose={() => setActive(null)} />}
-    </section>
+    </React.Fragment>
   );
 }
 window.Projects = Projects;
