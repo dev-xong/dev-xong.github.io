@@ -54,7 +54,7 @@ function Hero({ onNav }) {
               <Icon name="briefcase" size={16} stroke={2.2} style={{ color: 'var(--brand-green)', flex: 'none' }} />
               <span style={{ fontSize: 13.5, fontWeight: 700, color: 'var(--fg-2)' }}>경력</span>
               <span style={{ fontSize: 13.5, fontWeight: 800, color: 'var(--brand-green-press)',
-                letterSpacing: '-0.01em' }}>{careerYears}년 {careerMonths}개월</span>
+                letterSpacing: '-0.01em' }}>{careerYears}년 {careerMonths+1}개월</span>
             </div>
             <div style={{ display: 'flex', gap: 10, marginTop: 22 }}>
               <button className="btn btn--primary" onClick={() => onNav('projects')}>
